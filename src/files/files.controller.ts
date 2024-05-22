@@ -7,6 +7,7 @@ import { FileResponseVm } from "./model/file-response-vm.model";
 import { FilesService } from "./files.service";
 
 @Controller('api/files')
+
 export class FilesController {
 
   constructor(private filesService: FilesService){}
@@ -28,6 +29,7 @@ export class FilesController {
   upload(@UploadedFiles() files) {
       const response = [];
       files.forEach(file => {
+        console.log(file);
           const fileReponse = {
               originalname: file.originalname,
               encoding: file.encoding,
