@@ -7,7 +7,6 @@ import { FileResponseVm } from "./model/file-response-vm.model";
 import { FilesService } from "./files.service";
 
 @Controller('api/files')
-
 export class FilesController {
 
   constructor(private filesService: FilesService){}

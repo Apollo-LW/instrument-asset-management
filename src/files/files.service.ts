@@ -31,7 +31,7 @@ export class FilesService {
       length: result.length,
       md5: result.md5,
       chunkSize: result.chunkSize,
-      contentType: result.contentType      
+      contentType: result.contentType,
     }
   }
   

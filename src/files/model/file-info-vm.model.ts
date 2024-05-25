@@ -1,6 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Expose } from 'class-transformer';
 
+@Schema({ timestamps: true })
 export class FileInfoVm {
 
     @ApiProperty()
@@ -22,5 +24,4 @@ export class FileInfoVm {
     @ApiProperty()
     @Expose()
     md5: string;
-
 }
